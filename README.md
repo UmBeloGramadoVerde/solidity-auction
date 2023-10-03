@@ -15,7 +15,12 @@ A simple Ethereum smart contract for auctioning NFTs.
     cd solidity-auction
     ```
 
-3. **Install dependencies**:
+3. **Node version**:
+    ```bash
+    nvm use
+    ```
+
+4. **Install dependencies**:
     ```bash
     npm install
     ```
@@ -51,7 +56,7 @@ This will compile the contracts and generate the necessary artifacts.
     In a new terminal window, run:
 
     ```bash
-    npx hardhat run --network localhost scripts/deploy.js
+    npx hardhat run --network localhost scripts/deploy.ts
     ```
 
     This will deploy the contract to your local Ethereum node.
@@ -65,14 +70,16 @@ This will compile the contracts and generate the necessary artifacts.
 2. **Deploy the contract**:
 
     ```bash
-    npx hardhat run --network goerli scripts/deploy.js
+    npx hardhat run --network goerli scripts/deploy.ts
     ```
 
     This will deploy the contract to the Goerli testnet. Ensure you have enough Goerli Ether in the account associated with the provided private key.
 
----
+## Test
 
-Note: The `scripts/deploy.js` script mentioned in the README should contain your deployment code. If you don't have one, let me know, and I can help craft one for you. Also, always be cautious and never commit your private keys or API keys to version control. Use environment variables or other means to keep them secure.
+    ```bash
+    npx hardhat test
+    ```
 
 ## Architecture Considerations:
 ### Modular Design:
