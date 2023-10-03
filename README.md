@@ -26,6 +26,10 @@ A simple Ethereum smart contract for auctioning NFTs.
     ```
 
 4. **Set up environment variables**: Rename `.env.example` to `.env` and update the `LOCALHOST_PRIVATE_KEY`, `GOERLI_PRIVATE_KEY` and `INFURA_API_KEY` variables with your Localhost private key, Goerli private key and Infura API key respectively.
+To get a `LOCALHOST_PRIVATE_KEY` you can run:
+    ```bash
+    npx hardhat node
+    ```
 
 ## Compile
 
@@ -51,7 +55,11 @@ This will compile the contracts and generate the necessary artifacts.
 
     This command will start a local Ethereum node with pre-funded accounts.
 
-2. **Deploy the contract**:
+2. **Update `.env` file**: 
+
+    Ensure your `.env` file has a valid value for `LOCALHOST_PRIVATE_KEY` which comes from the previous command output.
+
+3. **Deploy the contract**:
 
     In a new terminal window, run:
 
