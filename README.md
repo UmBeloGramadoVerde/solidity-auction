@@ -15,7 +15,7 @@ A simple Ethereum smart contract for auctioning NFTs.
     cd solidity-auction
     ```
 
-3. **Node version**:
+3. **Node version (if you use NVM)**:
     ```bash
     nvm use
     ```
